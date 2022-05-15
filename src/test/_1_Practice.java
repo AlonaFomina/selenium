@@ -18,7 +18,7 @@ public class _1_Practice {
     public static void main(String[] args) throws InterruptedException {
 
         System.setProperty("webdriver.chrome.driver", "/Users/alonafomina/IdeaProjects/seleniun_intro/chromedriver");// this line sets the driver to Java
-        WebDriver driver = Driver.getDriver();
+        WebDriver driver = new ChromeDriver();
 
 
         driver.manage().window().maximize();
@@ -54,7 +54,7 @@ public class _1_Practice {
 //            e.printStackTrace();
             System.out.println(e.getMessage());
         } finally {
-            Driver.quitDriver();
+            driver.quit();
         }
     }
 }

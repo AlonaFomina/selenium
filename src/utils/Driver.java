@@ -15,7 +15,7 @@ public class Driver {
 
     public static WebDriver getDriver(){
         if(driver == null){
-            System.setProperty("webdriver.chrome.driver", "/Users/techglobal/IdeaProjects/selenium_intro/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "/Users/alonafomina/IdeaProjects/seleniun_intro/chromedriver");
             driver = new ChromeDriver();
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

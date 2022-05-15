@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 public class _01_Validate_Apple_Title {
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver","/Users/alonafomina/IdeaProjects/seleniun_intro/chromedriver");// this line sets the driver to Java
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = Driver.getDriver();
 
         driver.manage().window().maximize();
 
