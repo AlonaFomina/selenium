@@ -2,6 +2,7 @@ package test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import utils.Driver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -20,6 +21,6 @@ public class _01_Validate_Apple_Title {
         if(driver.getTitle().equals("Apple")) System.out.println("Apple title validation PASSED");
         else System.out.println("Apple title validation FAILED!!!");
 
-        driver.quit();
+        Driver.quitDriver();
     }
 }

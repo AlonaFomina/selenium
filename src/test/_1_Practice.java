@@ -2,6 +2,7 @@ package test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import utils.Driver;
 
 import static utils.Validation_Methods.*;
 
@@ -17,7 +18,7 @@ public class _1_Practice {
     public static void main(String[] args) throws InterruptedException {
 
         System.setProperty("webdriver.chrome.driver", "/Users/alonafomina/IdeaProjects/seleniun_intro/chromedriver");// this line sets the driver to Java
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = Driver.getDriver();
 
 
         driver.manage().window().maximize();
@@ -53,7 +54,7 @@ public class _1_Practice {
 //            e.printStackTrace();
             System.out.println(e.getMessage());
         } finally {
-            driver.quit();
+            Driver.quitDriver();
         }
     }
 }
